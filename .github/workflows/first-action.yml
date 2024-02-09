@@ -1,0 +1,15 @@
+#Name of the workflow.
+name: First-Workflow-CI
+
+#on to define when to run the workflow. workflow_dispatch to run the workflow manually
+on: workflow_dispatch
+
+#Define the jobs
+jobs:
+  first-job:
+    run-as: ubuntu-latest
+    steps:
+      - name: echo 
+        run: echo Hello, Mansing!
+      - name: second step
+        run: echo this is your second step
